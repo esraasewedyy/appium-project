@@ -25,11 +25,12 @@ public class EndToEndTest {
 
     @BeforeMethod
     public void appDesiredCapabilities() {
+
         DesiredCapabilities capabilities = new DesiredCapabilities();
-        capabilities.setCapability("deviceName", "YoussefEmulator");
+        capabilities.setCapability("deviceName", "EsraaEmulator");
         capabilities.setCapability("automationName", "UIAutomator2");
         capabilities.setCapability("platformName", "Android");
-        capabilities.setCapability("app", "C://Users//h//Desktop//EjadaAppium//src//test//resources//app//Android-MyDemoAppRN.1.3.0.build-244.apk");
+        capabilities.setCapability("app", "C://Users//Esraa//Desktop//appium project//ejada_task//src//test//resources//app//Android-MyDemoAppRN.1.3.0.build-244.apk");
 
 
         try {
@@ -49,7 +50,7 @@ public class EndToEndTest {
 
     }
 
-    @Story("Login with valid data")
+    @Story("Login with invalid data")
     @Test
     public void loginInvalid() throws InterruptedException {
 
